@@ -164,12 +164,13 @@ filter: brightness(1);
    z-index: 1;
     bottom:2%;
      right:1%; 
-     width:32px; 
-     height:32px; 
+     width:64px; 
+     height:64px; 
      background-color: rgb(51, 153, 255, 0.4);
   border:1px solid #3399ff;
   color: #3399ff;
   background-position: center;
+   border-radius: 50%;
 }
 .contato textarea{
   color: #fff;
