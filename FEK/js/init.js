@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.parallax').parallax();
+    $('.fixed-action-btn').floatingActionButton();
     $(".dropdown-trigger").dropdown({
         hover: true
     });
