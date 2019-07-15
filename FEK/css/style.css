@@ -131,8 +131,10 @@ filter: brightness(0.8);
 filter: brightness(1);
 }
 .conheca{
-  height: 460px;
   background-color: #f3f3f3;
+  width: 100% !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .contato{
   background-color: #001a4d;
@@ -177,4 +179,7 @@ filter: brightness(1);
 }
 .contato input{
   color: #fff;
+}
+.vermais{
+  display: none;
 }
