@@ -161,6 +161,15 @@ filter: brightness(1);
 .comochegar h1{
   font-size: 100px !important;
 }
+.sucesso{
+  background-color: #f3f3f3;
+  width: 100% !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.sucesso h4{
+  font-weight: bold;
+}
 .newsletter2{
   position:fixed;
    z-index: 1;
