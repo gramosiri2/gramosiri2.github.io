@@ -6,6 +6,8 @@ $(document).ready(function(){
         hover: true
     });
     $('.modal').modal();
+    $('.modal').modal('open'); 
+    
     $('.scrollspy').scrollSpy();
     $('.collapsible').collapsible();
     $('.carousel').carousel();
