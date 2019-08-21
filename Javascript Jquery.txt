@@ -1,0 +1,48 @@
+/* https://jsfiddle.net/dife/9k62qr01/5/ */
+
+/* Jquery */
+
+<p class="trocar">Palavra 1</p>
+$(document).ready(function(){
+   $(".trocar").on("click", function(){
+      $(this).text($(this).text() == 'Palavra 1' ? 'Palavra 2' : 'Palavra 1');
+   });
+});
+
+/* Javascrpt */
+
+<a href="#palavra" id="palavra" onclick='document.getElementById("palavra").innerHTML=(document.getElementById("palavra").innerHTML == "Palavra1") ? "Palavra2" : "Palavra1";'>Palavra1</a>
+
+/* Não precisa de id. Use o this que referencia o próprio elemento. E como nosso amigo disse na resposta dele, você pode usar o operador ternário: */
+<a href="#palavra" onclick='var t = this.textContent; this.textContent = t == "Palavra1" ? "Palavra2" : "Palavra1"'>Palavra1</a>
+
+/* No seu HTML coloca uma chamada para a função javascript. */
+< p onclick='MudaPalavra()' > Palavra1</p>
+/* Após, no topo dentro da ta head ou no final do arquivo arquivo antes de fechar o , adicione as tags de script. */
+<script>
+    function MudaPalavra(){
+        if(document.getElementById("palavra").value == "Palavra1")
+            document.getElementById("palavra").innerHTML = "Palavra2";
+        else
+            document.getElementById("palavra").innerHTML = "Palavra1";
+    }
+</script>
+
+/* */
+<p onclick="myFunction()" id="demo">Palavra</p>
+
+<script type="text/javascript">
+
+var palavra = false;
+
+function myFunction(){
+    if (palavra == false) {
+        document.getElementById("demo").innerHTML = "Palavra 1";    
+        palavra = true;
+    } else {
+        document.getElementById("demo").innerHTML = "Palavra 2";    
+        palavra = false;
+    }
+}
+
+</script>
